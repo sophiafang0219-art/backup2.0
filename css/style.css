@@ -1,0 +1,240 @@
+@import url(reset.css);
+
+body {
+  position: relative;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: bold;
+  color: #404040;
+  display: inline-block;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/* -------------頁首----------------- */
+header .logo {
+  height: 40px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.hd {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-right: 12px;
+}
+
+.hd a {
+  color: #404040;
+}
+
+.hd img {
+  height: 36px;
+}
+
+/* ------------首頁hero頁------------- */
+
+.hero {
+  display: flex;
+}
+
+.hero .bgc {
+  background-color: #63511D;
+  width: 45vw;
+  height: 768px;
+}
+
+.hero img {
+  width: 55vw;
+  height: 768px;
+}
+
+.hero .tx {
+  font-size: 0;
+  width: 570px;
+  height: 432px;
+  background-color: #fff;
+
+  position: absolute;
+  top: 160px;
+  left: 152px;
+
+  padding-bottom: 36px;
+  box-sizing: border-box;
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 48px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 48px;
+  margin-top: 0;
+}
+
+.hero a {
+  color: #fff;
+  background-color: #87B546;
+  border-radius: 8px;
+  padding: 12px 54px;
+  margin-left: 48px;
+}
+
+/* ------------------------首頁卡片 */
+.pros {}
+
+.pros img {
+  height: 382px;
+  /* width: 382px; */
+  /* overflow: hidden; */
+  border-radius: 12px;
+}
+
+.pros article {
+  display: flex;
+  column-gap: 120px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.pros h2 {
+  margin-bottom: 36px;
+}
+
+.pros .tx {
+  width: 360px;
+}
+
+.pros p {
+  line-height: 1.5;
+}
+
+.fo.tx {
+  padding-right: 36px;
+}
+
+.eye.tx,
+.su.tx {
+  order: -1;
+  padding-left: 36px;
+}
+
+/* 產品列表 */
+.prod {
+  background-color: #e8e5dc;
+  padding-left: 144px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.prod h2 {
+  display: inline-block;
+}
+
+.prod a {
+  display: inline-block;
+  width: 89px;
+  margin: 0 auto;
+  color: #404040;
+  border: 1px solid #404040;
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.prod h2+a {
+  box-sizing: border-box;
+  width: 68px;
+  float: right;
+  margin-right: 160px;
+}
+
+.prod ul {
+  display: flex;
+  margin-top: 84px;
+  gap: 36px;
+}
+
+.prod li {
+  width: 360px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.prod p {
+  line-height: 1.5;
+}
+
+.prod a~p {
+  display: none;
+}
+
+.prod a:hover~p {
+  /*按鈕點擊後 呈現簡介之模擬*/
+  display: block;
+}
+
+/*-----------實體通路------------------------*/
+.loca {
+  padding-left: 144px;
+  padding-top: 84px;
+}
+
+.fle {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+  margin-right: 160px
+}
+
+.search,
+#area {
+  border: 1px solid #404040;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  box-sizing: border-box;
+  width: 240px;
+  padding: 0 12px;
+}
+
+.search input {
+  border: none;
+}
+
+.search img {
+  width: 24px;
+  margin-left: auto;
+  /* margin-right: 12px; */
+}
+
+#area {
+
+  &,
+  &::picker(select) {
+    appearance: base-select;
+  }
+}
+
+#area option {
+  width: 240px;
+  color: #404040;
+}
