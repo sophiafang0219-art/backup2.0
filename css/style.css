@@ -9,14 +9,19 @@ h2 {
   line-height: 1.2;
   font-weight: bold;
   color: #404040;
-  display: inline-block;
 }
 
 a {
   font-size: 1rem;
   text-decoration: none;
+  line-height: 1.5;
 }
 
+p, li{
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #404040;
+}
 /* -------------頁首----------------- */
 header .logo {
   height: 40px;
@@ -115,6 +120,7 @@ header .logo {
 
 .pros h2 {
   margin-bottom: 36px;
+  display: inline-block;
 }
 
 .pros .tx {
@@ -135,7 +141,7 @@ header .logo {
   padding-left: 36px;
 }
 
-/* 產品列表 */
+/* --------------產品列表------------------------ */
 .prod {
   background-color: #e8e5dc;
   padding-left: 144px;
@@ -191,27 +197,23 @@ header .logo {
   display: block;
 }
 
-/*-----------實體通路------------------------*/
+/*-----------------------實體通路-----------------*/
 .loca {
-  padding-left: 144px;
-  padding-top: 84px;
+  padding: 84px 144px;
 }
 
 .fle {
   display: flex;
-  justify-content: flex-end;
+  width: fit-content;
+  margin-left: auto;
   gap: 24px;
-  margin-right: 160px
 }
 
 .search,
 #area {
-  border: 1px solid #404040;
-  border-radius: 16px;
   display: flex;
   align-items: center;
   height: 48px;
-  box-sizing: border-box;
   width: 240px;
   padding: 0 12px;
 }
@@ -226,15 +228,98 @@ header .logo {
   /* margin-right: 12px; */
 }
 
-#area {
-
-  &,
-  &::picker(select) {
+.search, #area, ::picker(select) {
     appearance: base-select;
+    border: 1px solid #404040;
+    border-radius: 16px;
+    box-sizing: border-box;
+    width: 240px;
+    color: #404040;
   }
-}
 
 #area option {
-  width: 240px;
   color: #404040;
+  padding: 8px;
+}
+
+.f{
+  display: flex;
+  gap: 112px;
+  margin-top: 180px
+}
+
+.map{
+  display: inline-block;
+}
+
+.map iframe{
+  height: 450px;
+  width: 600px;
+}
+
+.thr, .wes, .dre{
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #E8E5DC;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .25);
+  width: 440px;
+  height: 136px;
+  padding: 24px 32px;
+  margin-bottom: 20px;
+} 
+
+.thr h2, .wes h2 ,.dre h2{
+  margin-bottom: 20px;
+}
+
+.thr:hover, .wes:hover, .dre:hover{
+  background-color: #E8E5DC;
+  border: 1px solid #fff;
+  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, .25);
+}
+/* 關於我們 */
+.about{
+  padding: 160px 240px;
+  background-color: #E8E5DC;
+}
+
+.wra{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wra .tx{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 54px;
+  width:510px;
+  height: 450px;
+  padding: 0 64px;
+  background-image: url(../img/about_us_bg.jpg);
+  background-size: cover;
+}
+
+.wra img{
+  width: 50%;
+  height: 450px;
+}
+
+/* 頁尾 */
+footer{
+  background-color: #5A6E42;
+  
+}
+
+ul{
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+li{
+  color: #fff;
 }
