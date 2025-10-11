@@ -22,6 +22,15 @@ p, li{
   line-height: 1.5;
   color: #404040;
 }
+/* --------------main--------------- */
+.bg{
+  background-color: #e8e5dc;
+  width: 100%;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;   
+}
 /* -------------頁首----------------- */
 header .logo {
   height: 40px;
@@ -99,14 +108,12 @@ header .logo {
   padding: 12px 54px;
   margin-left: 48px;
 }
-
 /* ------------------------首頁卡片 */
-.pros {}
-
+.pros{
+  margin: 60px auto;
+}
 .pros img {
   height: 382px;
-  /* width: 382px; */
-  /* overflow: hidden; */
   border-radius: 12px;
 }
 
@@ -143,8 +150,6 @@ header .logo {
 
 /* --------------產品列表------------------------ */
 .prod {
-  background-color: #e8e5dc;
-  padding-left: 144px;
   padding-top: 84px;
   padding-bottom: 84px;
 }
@@ -167,7 +172,7 @@ header .logo {
   box-sizing: border-box;
   width: 68px;
   float: right;
-  margin-right: 160px;
+  /* margin-right: 160px; */
 }
 
 .prod ul {
@@ -199,7 +204,8 @@ header .logo {
 
 /*-----------------------實體通路-----------------*/
 .loca {
-  padding: 84px 144px;
+  padding: 84px 0;
+  /* margin: 0 24px; */
 }
 
 .fle {
@@ -245,7 +251,8 @@ header .logo {
 .f{
   display: flex;
   gap: 112px;
-  margin-top: 180px
+  margin-top: 120px;
+  justify-content: center;
 }
 
 .map{
@@ -279,7 +286,8 @@ header .logo {
 }
 /* 關於我們 */
 .about{
-  padding: 160px 240px;
+  padding: 160px 0;
+  /* margin: 0 120pz?; */
   background-color: #E8E5DC;
 }
 
@@ -287,6 +295,7 @@ header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 960px;
 }
 
 .wra .tx{
@@ -303,14 +312,22 @@ header .logo {
 }
 
 .wra img{
-  width: 50%;
+  /* width: %;50 */
   height: 450px;
 }
 
 /* 頁尾 */
 footer{
   background-color: #5A6E42;
-  
+  position: relative;
+  height: 256px;
+}
+
+footer>img{
+  width: 104px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
 }
 
 ul{
@@ -318,8 +335,25 @@ ul{
   gap: 10%;
   justify-content: center;
   align-items: center;
+  padding: 36px 0;
+}
+
+ol{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 li{
   color: #fff;
+}
+
+ol li img, .soc img{
+  width: 24px;
+}
+
+.soc{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
