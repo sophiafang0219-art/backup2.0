@@ -201,14 +201,13 @@ header .logo {
 }
 
 .prod a:hover~p {
-  /*按鈕點擊後 呈現簡介之模擬*/
+  /*要做點擊 先用hover模擬*/
   display: block;
 }
 
 /*-----------------------實體通路-----------------*/
 .loca {
   padding: 84px 0;
-  /* margin: 0 24px; */
 }
 
 .fle {
@@ -218,8 +217,7 @@ header .logo {
   gap: 24px;
 }
 
-.search,
-#area {
+.search,#area {
   display: flex;
   align-items: center;
   height: 48px;
@@ -234,7 +232,6 @@ header .logo {
 .search img {
   width: 24px;
   margin-left: auto;
-  /* margin-right: 12px; */
 }
 
 .search, #area, ::picker(select) {
@@ -290,7 +287,6 @@ header .logo {
 /* ----------------------關於我們---------------------------- */
 .about{
   padding: 160px 0;
-  /* margin: 0 120pz?; */
   background-color: #E8E5DC;
 }
 
@@ -315,7 +311,6 @@ header .logo {
 }
 
 .wra img{
-  /* width: %;50 */
   height: 450px;
 }
 

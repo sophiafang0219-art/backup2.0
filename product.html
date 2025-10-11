@@ -32,7 +32,7 @@
   <section class="prod">
     <div class="container">
       <h2>產品列表（閱讀器及周邊）</h2>
-      <a href="#">篩選與排序</a>
+      <button class="btn-tofilter" onclick="openPopup()">篩選與排序</button>
       <ul>
         <li>
           <img src="img/prod1.png" alt="">
@@ -71,7 +71,6 @@
           <a href="#">了解更多</a>
         </li>
       </ul>
-
       <ul class="page">
         <li class="dir"><img src="img/left.png" alt=""></li>
         <li class="dot"></li>
@@ -79,7 +78,125 @@
         <li class="dot"></li>
         <li class="dir"><img src="img/right.png" alt=""></li>
       </ul>
+      <!-- ---------------------篩選------------------------- -->
+
+      <div class="popup" id="popup">
+        <div class="popup-top">
+          <h3>篩選</h3>
+          <button class="cl-btn" onclick="closePopup()">
+            <img src="img/Close.png" alt="">
+          </button>
+        </div>
+        <!-- 內容區 -->
+        <div class="content">
+          <div class="c">
+            <h3>排序依據：</h3>
+            <div class="opts">
+              <label class="opt">
+                <input type="radio" name="sort" value="newest">
+                <span>銷售量：由高到低</span>
+              </label>
+              <label class="opt">
+                <input type="radio" name="sort" value="oldest">
+                <span>上架日期：由新到舊</span>
+              </label>
+              <label class="opt">
+                <input type="radio" name="sort" value="price-low">
+                <span>價格：由低到高</span>
+              </label>
+              <label class="opt">
+                <input type="radio" name="sort" value="price-high">
+                <span>價格：由高到低</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="c">
+            <h3>尺寸：</h3>
+            <div class="opts">
+
+              <label class="opt">
+                <input type="checkbox" name="size" value="6">
+                <span>6吋</span>
+              </label>
+
+              <label class="opt">
+                <input type="checkbox" name="size" value="7">
+                <span>7吋</span>
+              </label>
+
+              <label class="opt">
+                <input type="checkbox" name="size" value="8">
+                <span>8吋</span>
+              </label>
+
+              <label class="opt">
+                <input type="checkbox" name="size" value="10">
+                <span>10.1吋</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="c">
+            <h3>偏好：</h3>
+            <div class="opts">
+              <label class="opt">
+                <input type="checkbox" name="color" value="color">
+                <span>彩色</span>
+              </label>
+
+              <label class="opt">
+                <input type="checkbox" name="bw" value="bw">
+                <span>黑白</span>
+              </label>
+
+              <label class="opt">
+                <input type="checkbox" name="waterproof" value="waterproof">
+                <span>防潑水</span>
+              </label>
+
+              <label class="opt">
+                <input type="checkbox" name="frontlight" value="frontlight">
+                <span>前光</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="c">
+            <h3>價格：</h3>
+            <div class="opts">
+              <label class="opt">
+                <input type="checkbox" name="price-1" value="1-3000">
+                <span>1-3000</span>
+              </label>
+
+              <label class="opt">
+                <input type="checkbox" name="price-2" value="3000-5000">
+                <span>3000-5000</span>
+              </label>
+
+              <label class="opt">
+                <input type="checkbox" name="price-3" value="5000-10000">
+                <span>5000-10000</span>
+              </label>
+
+              <label class="opt">
+                <input type="checkbox" name="price-4" value="10000-15000">
+                <span>10000-15000</span>
+              </label>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="popup-btns">
+          <button class="btn-x" onclick="closePopup()">取消</button>
+          <button class="btn-o" onclick="closePopup()">確定</button>
+        </div>
+      </div>
+
     </div>
+    <div class="bk" id="bk"></div>
   </section>
   <!-- -------------頁尾------------------->
   <footer>
@@ -120,5 +237,22 @@
   </footer>
 
 </body>
+<script>
+  function openPopup() {
+    const bk = document.getElementById('bk');
+    const popup = document.getElementById('popup');
+    bk.classList.add('active');
+    popup.classList.add('active');
+  }
+
+  function closePopup() {
+    const bk = document.getElementById('bk');
+    const popup = document.getElementById('popup');
+    bk.classList.remove('active');
+    popup.classList.remove('active');
+  }
+
+
+</script>
 
 </html>
