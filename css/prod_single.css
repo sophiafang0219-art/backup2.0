@@ -87,7 +87,6 @@ header .logo {
 }
 
 /* ----------------個別產品頁------------------ */
-main {}
 
 main .outer {
   display: flex;
@@ -101,6 +100,7 @@ main .outer {
 .outer .pics {
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 
 .pics img {
@@ -112,6 +112,10 @@ main .outer {
   /*要做hover 想做active*/
   width: 48px;
   height: 48px;
+}
+
+.pics button img:hover{
+  transform: scale(1.2);
 }
 
 img.big {
@@ -168,7 +172,7 @@ img.big {
                        'mon sto'
                        'cpu con' 
                        'bat wp' ;
-
+  margin: 16px auto 84px;
 }
 
 
