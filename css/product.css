@@ -1,6 +1,7 @@
 @import url(reset.css);
 
 body {
+  font-family: Helvetica, 'Noto Sans TC';
   position: relative;
 }
 
@@ -21,6 +22,7 @@ a {
   font-size: 1rem;
   text-decoration: none;
   line-height: 1.5;
+    border-radius: 16px;
 }
 
 p,
@@ -43,6 +45,15 @@ span {
 }
 
 /* -------------頁首----------------- */
+.space{
+  height: 64px;
+}
+header{
+  position: fixed;
+  width: 100%;
+  background-color:#fff;
+}
+
 header .logo {
   height: 40px;
   position: absolute;
@@ -160,7 +171,7 @@ header .logo {
   background-color: transparent;
   height: 48px;
   display: block;
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .popup {
@@ -252,7 +263,7 @@ input[type="radio"] {
 .popup-btns {
   display: flex;
   justify-content: flex-end;
-  gap:16px;
+  gap: 16px;
   padding: 24px 32px;
 }
 

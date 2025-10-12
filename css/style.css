@@ -1,6 +1,7 @@
 @import url(reset.css);
 
 body {
+  font-family: Helvetica, 'Noto Sans TC';
   position: relative;
 }
 
@@ -11,27 +12,48 @@ h2 {
   color: #404040;
 }
 
+h3 {
+  font-size: 1.25rem;
+  color: #404040;
+  line-height: 1.5;
+}
+
 a {
   font-size: 1rem;
   text-decoration: none;
   line-height: 1.5;
+    border-radius: 16px;
 }
 
-p, li{
+p,
+li,
+span {
   font-size: 1rem;
   line-height: 1.5;
   color: #404040;
 }
+
 /* --------------置中& 拉滿--------------- */
-.bg{
+.bg {
   background-color: #e8e5dc;
   width: 100%;
 }
-.container{
+
+.container {
   max-width: 1200px;
-  margin: 0 auto;   
+  margin: 0 auto;
 }
+
 /* -------------頁首----------------- */
+.space{
+  height: 64px;
+}
+header{
+  position: fixed;
+  width: 100%;
+  background-color:#fff;
+}
+
 header .logo {
   height: 40px;
   position: absolute;
@@ -83,35 +105,40 @@ header .logo {
   top: 160px;
   left: 152px;
 
-  padding-bottom: 36px;
+  /* padding-bottom: 36px; */
   box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding: 36px;
 }
 
 .hero h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: bold;
   line-height: 1.2;
-  margin: 48px;
 }
 
 .hero p {
   font-size: 1.25rem;
   line-height: 1.5;
-  margin: 48px;
   margin-top: 0;
 }
 
 .hero a {
   color: #fff;
   background-color: #87B546;
+  width: fit-content;
   border-radius: 8px;
   padding: 12px 54px;
-  margin-left: 48px;
 }
+
 /* ------------------------首頁卡片 */
-.pros{
+.pros {
   margin: 60px auto;
 }
+
 .pros img {
   height: 382px;
   border-radius: 12px;
@@ -188,7 +215,7 @@ header .logo {
   gap: 20px;
 }
 
-.prod img{
+.prod img {
   border-radius: 16px;
 }
 
@@ -217,7 +244,8 @@ header .logo {
   gap: 24px;
 }
 
-.search,#area {
+.search,
+#area {
   display: flex;
   align-items: center;
   height: 48px;
@@ -234,37 +262,41 @@ header .logo {
   margin-left: auto;
 }
 
-.search, #area, ::picker(select) {
-    appearance: base-select;
-    border: 1px solid #404040;
-    border-radius: 16px;
-    box-sizing: border-box;
-    width: 240px;
-    color: #404040;
-  }
+.search,
+#area,
+::picker(select) {
+  appearance: base-select;
+  border: 1px solid #404040;
+  border-radius: 16px;
+  box-sizing: border-box;
+  width: 240px;
+  color: #404040;
+}
 
 #area option {
   color: #404040;
   padding: 8px;
 }
 
-.f{
+.f {
   display: flex;
   gap: 112px;
   margin-top: 120px;
   justify-content: center;
 }
 
-.map{
+.map {
   display: inline-block;
 }
 
-.map iframe{
+.map iframe {
   height: 450px;
   width: 600px;
 }
 
-.thr, .wes, .dre{
+.thr,
+.wes,
+.dre {
   box-sizing: border-box;
   background-color: #fff;
   border: 1px solid #E8E5DC;
@@ -273,62 +305,67 @@ header .logo {
   height: 136px;
   padding: 24px 32px;
   margin-bottom: 20px;
-} 
+}
 
-.thr h2, .wes h2 ,.dre h2{
+.thr h2,
+.wes h2,
+.dre h2 {
   margin-bottom: 20px;
 }
 
-.thr:hover, .wes:hover, .dre:hover{
+.thr:hover,
+.wes:hover,
+.dre:hover {
   background-color: #E8E5DC;
   border: 1px solid #fff;
   box-shadow: inset 4px 4px 4px rgba(0, 0, 0, .25);
 }
+
 /* ----------------------關於我們---------------------------- */
-.about{
+.about {
   padding: 160px 0;
   background-color: #E8E5DC;
 }
 
-.wra{
+.wra {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 960px;
 }
 
-.wra .tx{
+.wra .tx {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 54px;
-  width:510px;
+  width: 510px;
   height: 450px;
   padding: 0 64px;
   background-image: url(../img/about_us_bg.jpg);
   background-size: cover;
 }
 
-.wra img{
+.wra img {
   height: 450px;
 }
 
-/* --------------------頁尾----------------------------- */
-footer{
+/* --------------------頁尾--------------------- */
+footer {
   background-color: #5A6E42;
   position: relative;
   height: 256px;
 }
 
-footer>img{
+footer>img {
   width: 104px;
   position: absolute;
   left: 20px;
   top: 20px;
 }
 
-ul{
+ul {
   display: flex;
   gap: 10%;
   justify-content: center;
@@ -336,21 +373,22 @@ ul{
   padding: 36px 0;
 }
 
-ol{
+ol {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-li{
+li {
   color: #fff;
 }
 
-ol li img, .soc img{
+ol li img,
+.soc img {
   width: 24px;
 }
 
-.soc{
+.soc {
   display: flex;
   gap: 20px;
   justify-content: center;
