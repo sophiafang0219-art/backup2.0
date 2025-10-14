@@ -2,7 +2,6 @@
 
 body {
   font-family: Helvetica, 'Noto Sans TC';
-  position: relative;
 }
 
 h2 {
@@ -100,12 +99,12 @@ main .outer {
 .outer .pics {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
 }
 
 .pics img {
-  width: 150px;
-  height: 150px;
+  width: 116px;
+  height: 116px;
 }
 
 .pics button img {
@@ -114,7 +113,7 @@ main .outer {
   height: 48px;
 }
 
-.pics button img:hover{
+.pics button img:hover {
   transform: scale(1.2);
 }
 
@@ -164,49 +163,60 @@ img.big {
   margin: 0 auto 124px;
 }
 
-.wrapper{
+.wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px 1fr 1fr 1fr;
   grid-template-areas: 'h2 h2'
-                       'mon sto'
-                       'cpu con' 
-                       'bat wp' ;
+    'mon sto'
+    'cpu con'
+    'bat wp';
   margin: 16px auto 84px;
 }
 
 
-.wrapper h2{
+.wrapper h2 {
   grid-area: h2;
   padding: 36px;
 }
 
-.wrapper p{
+.wrapper p {
   padding-left: 36px;
 }
-.monitor{
+
+.monitor {
   grid-area: mon;
 }
-.store{
+
+.store {
   grid-area: sto;
 }
-.cpu{
+
+.cpu {
   grid-area: cpu;
 }
-.connect{
+
+.connect {
   grid-area: con;
 }
-.battery{
+
+.battery {
   grid-area: bat;
 }
-.waterproof{
+
+.waterproof {
   grid-area: wp;
 }
 
-.monitor, .store, .cpu, .connect, .battery, .waterproof{
-    padding: 36px;
-    /* border-bottom: 1px solid #e8e5dc; */
-    box-shadow: 0 4px #e8e5dc50;
+.monitor,
+.store,
+.cpu,
+.connect,
+.battery,
+.waterproof {
+  padding: 36px;
+  /* border-bottom: 1px solid #e8e5dc; */
+  box-shadow: 0 4px #e8e5dc50;
 }
 
 

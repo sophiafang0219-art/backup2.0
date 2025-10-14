@@ -2,7 +2,6 @@
 
 body {
   font-family: Helvetica, 'Noto Sans TC';
-  position: relative;
 }
 
 h2 {
@@ -130,7 +129,7 @@ header .logo {
 .prod ul.page {
   gap: 12px;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
   margin-top: 30px;
   margin-right: 24px;
 }

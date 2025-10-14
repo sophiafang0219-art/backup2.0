@@ -10,24 +10,7 @@
 
 <body>
   <!---------------頁首------------------->
-  <header>
-    <a href="index.html"><img class="logo" src="img/MyLogo.png" alt=""></a>
-    <div class="hd">
-      <a href="#">關於我們</a>
-      <a href="product.html">閱讀器</a>
-      <a href="">書城</a>
-      <a href="">幫助</a>
-      <a href="">
-        <img src="img/search.png" alt="">
-      </a>
-      <a href="">
-        <img src="img/member.png" alt="">
-      </a>
-      <a href="">
-        <img src="img/cart.png" alt="">
-      </a>
-    </div>
-  </header>
+  <header></header>
   <!--------------產品總表--------------------->
   <section class="prod">
     <div class="container">
@@ -72,11 +55,11 @@
         </li>
       </ul>
       <ul class="page">
-        <li class="dir"><img src="img/left.png" alt=""></li>
+        <li class="dir"><img src="img/left.svg" alt=""></li>
         <li class="dot"></li>
         <li class="dot"></li>
         <li class="dot"></li>
-        <li class="dir"><img src="img/right.png" alt=""></li>
+        <li class="dir"><img src="img/right.svg" alt=""></li>
       </ul>
       <!-- ---------------------篩選------------------------- -->
 
@@ -84,7 +67,7 @@
         <div class="popup-top">
           <h3>篩選</h3>
           <button class="cl-btn" onclick="closePopup()">
-            <img src="img/Close.png" alt="">
+            <img src="img/Close.svg" alt="">
           </button>
         </div>
         <!-- 內容區 -->
@@ -199,42 +182,7 @@
     <div class="bk" id="bk"></div>
   </section>
   <!-- -------------頁尾------------------->
-  <footer>
-    <img src="img/logo_bw.png" alt="" class="logo_bw">
-
-    <ul>
-      <li>
-        <ol>
-          <li><img src="img/mailicon.png" alt="">
-            info@gmail.com</li>
-          <li><img src="img/phoneicon.png" alt="">
-            0800-000-000</li>
-          <li>Copyright ©2025ELINK all rights reserved.</li>
-        </ol>
-      </li>
-      <li>
-        <ol>
-          <li>服務條款</li>
-          <li>退換貨政策</li>
-          <li>隱私政策</li>
-        </ol>
-      </li>
-      <li>
-        <ol>
-          <li>使用條款</li>
-          <li>管理團隊</li>
-          <li>保固說明</li>
-        </ol>
-      </li>
-    </ul>
-
-    <div class="soc">
-      <img src="img/facebook_ft.png" alt="">
-      <img src="img/twitter_ft.png" alt="">
-      <img src="img/instagram_ft.png" alt="">
-    </div>
-
-  </footer>
+  <footer></footer>
 
 </body>
 <script>
@@ -251,8 +199,13 @@
     bk.classList.remove('active');
     popup.classList.remove('active');
   }
-
-
+  // 引入頁首、頁尾
+  fetch('./header.html')
+    .then(res => res.text())
+    .then(data => document.querySelector('header').innerHTML = data)
+  fetch('./footer.html')
+    .then(res => res.text())
+    .then(data => document.querySelector('footer').innerHTML = data)
 </script>
 
 </html>
