@@ -1,7 +1,6 @@
 @import url(reset.css);
 
 body {
-  font-family: Helvetica, 'Noto Sans TC';
   position: relative;
 }
 
@@ -22,7 +21,6 @@ a {
   font-size: 1rem;
   text-decoration: none;
   line-height: 1.5;
-  border-radius: 16px;
 }
 
 p,
@@ -45,17 +43,6 @@ span {
 }
 
 /* -------------頁首----------------- */
-.space {
-  height: 64px;
-}
-
-header {
-  position: fixed;
-  width: 100%;
-  background-color: #fff;
-  z-index: 999;
-}
-
 header .logo {
   height: 40px;
   position: absolute;
@@ -132,7 +119,6 @@ header .logo {
   align-items: center;
   justify-content: end;
   margin-top: 30px;
-  margin-right: 24px;
 }
 
 .prod ul.page .dir {

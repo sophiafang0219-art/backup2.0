@@ -2,7 +2,7 @@
 
 body {
   font-family: Helvetica, 'Noto Sans TC';
-  position: relative;
+  
 }
 
 h2 {
@@ -52,6 +52,7 @@ header{
   position: fixed;
   width: 100%;
   background-color:#fff;
+  z-index: 999;
 }
 
 header .logo {
@@ -82,6 +83,7 @@ header .logo {
 
 .hero {
   display: flex;
+  position: relative;
 }
 
 .hero .bgc {
@@ -205,6 +207,7 @@ header .logo {
   display: flex;
   margin-top: 84px;
   gap: 36px;
+  align-items: flex-start;
 }
 
 .prod li {

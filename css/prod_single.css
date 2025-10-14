@@ -59,7 +59,7 @@ header {
   position: fixed;
   width: 100%;
   background-color: #fff;
-
+  z-index: 999;
 }
 
 header .logo {
@@ -205,7 +205,7 @@ img.big {
 
 .monitor, .store, .cpu, .connect, .battery, .waterproof{
     padding: 36px;
-    border-bottom: 1px solid #e8e5dc;
+    /* border-bottom: 1px solid #e8e5dc; */
     box-shadow: 0 4px #e8e5dc50;
 }
 
