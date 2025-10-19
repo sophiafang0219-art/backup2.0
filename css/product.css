@@ -120,6 +120,7 @@ header .logo {
 
 .prod img {
   border-radius: 16px;
+  transition:.3s;
 }
 
 .prod img:hover {
@@ -136,6 +137,7 @@ header .logo {
 
 .prod ul.page .dir {
   width: 20px;
+  transition: .3s;
 }
 
 .prod ul.page img:hover {
@@ -150,7 +152,7 @@ header .logo {
   position: relative;
 }
 
-.dot:hover::before {
+.dot.active::before{ /*還沒寫js*/
   content: '';
   position: absolute;
   top: 50%;

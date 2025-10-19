@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>結帳頁面</title>
+  <link rel="shortcut icon" href="img/MyLogo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header></header><!-- 頁首位置 -->
+  <!-- 結帳頁面 -->
+  <section class="container">
+    <h2>1.填寫資料</h2>
+    <form class="wrapper">
+      <div>
+        <input type="checkbox" name="member">
+        <label for="member">收件人為會員</label>
+      </div> 
+
+      <div class="in-wra">
+        <input type="text" placeholder="全名">
+        <input type="text" placeholder="手機號碼">
+      </div>
+
+      <input type="text" placeholder="電子郵件">
+      <input type="number" placeholder="郵遞區號">
+      <input type="text" placeholder="地址">     
+      <div>
+        <input type="checkbox" name="default">
+        <label for="default">設為預設</label>
+      </div> 
+      
+    </form>
+    <button id="continue">繼續</button>
+  </section>
+
+  <section class="container">
+    <h2>1.填寫資料</h2>
+    <form class="wrapper">
+      <div>
+        <label for=""></label>
+        <input type="checkbox">
+      </div> 
+      <div class="in-wra">
+        <input type="text" placeholder="全名">
+        <input type="text" placeholder="手機號碼">
+      </div>
+      <input type="text" placeholder="電子郵件">
+      <input type="number" placeholder="郵遞區號">
+      <input type="text" placeholder="地址">     
+      <div>
+        <label for=""></label>
+        <input type="checkbox">
+      </div> 
+      
+    </form>
+    <button id="continue">繼續</button>
+  </section>
+
+  <section class="container">
+    <h2>2.</h2>
+    <form class="wrapper">
+      <div>
+        <label for=""></label>
+        <input type="checkbox">
+      </div> 
+      <div class="in-wra">
+        <input type="text" placeholder="全名">
+        <input type="text" placeholder="手機號碼">
+      </div>
+      <input type="text" placeholder="電子郵件">
+      <input type="number" placeholder="郵遞區號">
+      <input type="text" placeholder="地址">     
+      <div>
+        <label for=""></label>
+        <input type="checkbox">
+      </div> 
+      
+    </form>
+    <button id="continue">繼續</button>
+  </section>
+
+
+
+
+  <footer></footer><!-- -------------頁尾------------------->
+
+  <script>
+    
+
+    fetch('./header.html')
+      .then(res => res.text())
+      .then(data => document.querySelector('header').innerHTML=data)
+    fetch('./footer.html')
+      .then(res => res.text())
+      .then(data => document.querySelector('footer').innerHTML=data)
+  </script>
+
+</body>
+</html>

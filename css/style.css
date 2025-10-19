@@ -21,12 +21,14 @@ a {
   font-size: 1rem;
   text-decoration: none;
   line-height: 1.5;
-    border-radius: 16px;
+  border-radius: 16px;
 }
 
 p,
 li,
-span {
+span,
+label,
+button {
   font-size: 1rem;
   line-height: 1.5;
   color: #404040;
@@ -194,7 +196,7 @@ span {
   display: none;
 }
 
-.prod a:hover~p {
+.prod a.active~p {
   /*要做點擊 先用hover模擬*/
   display: block;
 }
@@ -266,12 +268,14 @@ span {
 .dre {
   box-sizing: border-box;
   background-color: #fff;
-  border: 1px solid #E8E5DC;
+  border: 1px solid #e8e5dc50;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, .25);
   width: 440px;
   height: 136px;
   padding: 24px 32px;
   margin-bottom: 20px;
+
+  transition: background-color 50s;
 }
 
 .thr h2,
@@ -283,8 +287,14 @@ span {
 .thr:hover,
 .wes:hover,
 .dre:hover {
+  transform: translateY(-5px);
   background-color: #E8E5DC;
-  border: 1px solid #fff;
+}
+
+.thr.active,
+/*還沒寫js*/
+.wes.active,
+.dre.active {
   box-shadow: inset 4px 4px 4px rgba(0, 0, 0, .25);
 }
 
@@ -318,4 +328,54 @@ span {
   height: 450px;
 }
 
-/* --------------------頁尾--------------------- */
+/* --------------------結帳頁面--------------------- */
+section{
+  padding-top: 64px;
+}
+
+h2{}
+
+
+input[type="checkbox"]{
+  accent-color: #87B546;
+
+}
+
+
+
+label{
+  /* margin-left: 12px; */
+}
+
+.wrapper{
+  margin: 32px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.in-wra{
+  display: flex;
+  gap: 20px;
+}
+
+.in-wra input[placeholder]{
+  width: 230px;
+}
+
+input[placeholder], button#continue{
+  border: 1px solid #404040;
+  border-radius: 16px;
+  box-sizing: border-box;
+  width: 480px;
+  height: 48px;
+  padding: 12px;
+}
+
+button#continue{
+  width: 200px;
+  border-color: #63511D;
+  background-color: #63511D;
+  color: #fff;
+}

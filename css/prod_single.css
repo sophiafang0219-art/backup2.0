@@ -111,6 +111,7 @@ main .outer {
   /*要做hover 想做active*/
   width: 48px;
   height: 48px;
+  transition:.3s;
 }
 
 .pics button img:hover {

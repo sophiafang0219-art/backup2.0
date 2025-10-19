@@ -56,9 +56,9 @@
       </ul>
       <ul class="page">
         <li class="dir"><img src="img/left.svg" alt=""></li>
-        <li class="dot"></li>
-        <li class="dot"></li>
-        <li class="dot"></li>
+        <li class="dot" id="dot"></li>
+        <li class="dot" id="dot"></li>
+        <li class="dot" id="dot"></li>
         <li class="dir"><img src="img/right.svg" alt=""></li>
       </ul>
       <!-- ---------------------篩選------------------------- -->
@@ -186,19 +186,20 @@
 
 </body>
 <script>
+  //篩選
   function openPopup() {
-    const bk = document.getElementById('bk');
-    const popup = document.getElementById('popup');
+    const bk = document.querySelector('#bk');
+    const popup = document.querySelector('#popup');
     bk.classList.add('active');
     popup.classList.add('active');
   }
-
   function closePopup() {
-    const bk = document.getElementById('bk');
-    const popup = document.getElementById('popup');
+    const bk = document.querySelector('#bk');
+    const popup = document.querySelector('#popup')
     bk.classList.remove('active');
     popup.classList.remove('active');
   }
+
   // 引入頁首、頁尾
   fetch('./header.html')
     .then(res => res.text())

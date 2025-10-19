@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/cart.css">
 </head>
 <body>
-
+  <header></header>
 <!-- 購物車 -->
 
 
@@ -15,6 +15,17 @@
 
 
   <!-- -------------頁尾------------------->
-  <footer>
+  <footer></footer>
+  <script>
+    
+
+    fetch('./header.html')
+      .then(res => res.text())
+      .then(data => document.querySelector('header').innerHTML=data)
+    fetch('./footer.html')
+      .then(res => res.text())
+      .then(data => document.querySelector('footer').innerHTML=data)
+  </script>
+
 </body>
 </html>
