@@ -5,52 +5,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>產品頁 </title>
-  <link rel="stylesheet" href="css/product.css">
+  <link rel="shortcut icon" href="img/MyLogo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/rwd.css">
+  <script src="all.js"></script>
 </head>
 
 <body>
   <!---------------頁首------------------->
   <header></header>
   <!--------------產品總表--------------------->
-  <section class="prod">
+  <section class="prodAll">
     <div class="container">
       <h2>產品列表（閱讀器及周邊）</h2>
       <button class="btn-tofilter" onclick="openPopup()">篩選與排序</button>
       <ul>
         <li>
           <img src="img/prod1.png" alt="">
-          <h2>Title1</h2>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <h2>Aether Nova 6S</h2>
+          <p>輕巧入門款。</p>
           <a href="prod_single.html">了解更多</a>
         </li>
         <li>
           <img src="img/prod2.png" alt="">
-          <h2>Title2</h2>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <h2>Voyager Pro 10.3</h2>
+          <p>專業PDF與筆記本。</p>
           <a href="prod_single.html">了解更多</a>
         </li>
         <li>
           <img src="img/prod3.png" alt="">
-          <h2>Title3</h2>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <h2>Luminos Color 7X</h2>
+          <p>彩色悅讀旗艦。</p>
           <a href="prod_single.html">了解更多</a>
         </li>
         <li>
           <img src="img/prod4.png" alt="">
-          <h2>Title4</h2>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <h2>Chrono Pad 10.3</h2>
+          <p>極限生產力平板。</p>
           <a href="prod_single.html">了解更多</a>
         </li>
         <li>
           <img src="img/prod5.png" alt="">
-          <h2>Title5</h2>
+          <h2>Aether Zenith 8</h2>
           <p>Lorem ipsum dolor sit amet.</p>
           <a href="prod_single.html">了解更多</a>
         </li>
         <li>
           <img src="img/prod6.png" alt="">
-          <h2>Title6</h2>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <h2>Aether Precision Pen</h2>
+          <p>磁吸式無源電磁筆</p>
           <a href="prod_single.html">了解更多</a>
         </li>
       </ul>
@@ -115,7 +118,7 @@
 
               <label class="opt">
                 <input type="checkbox" name="size" value="10">
-                <span>10.1吋</span>
+                <span>10.3吋</span>
               </label>
             </div>
           </div>
@@ -186,19 +189,7 @@
 
 </body>
 <script>
-  //篩選
-  function openPopup() {
-    const bk = document.querySelector('#bk');
-    const popup = document.querySelector('#popup');
-    bk.classList.add('active');
-    popup.classList.add('active');
-  }
-  function closePopup() {
-    const bk = document.querySelector('#bk');
-    const popup = document.querySelector('#popup')
-    bk.classList.remove('active');
-    popup.classList.remove('active');
-  }
+
 
   // 引入頁首、頁尾
   fetch('./header.html')

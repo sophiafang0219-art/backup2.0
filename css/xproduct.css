@@ -24,12 +24,6 @@ a {
   border-radius: 16px;
 }
 
-
-button {
-  background-color: transparent;
-  border: none;
-}
-
 p,
 li,
 span {
@@ -85,50 +79,5 @@ header .logo {
   height: 36px;
 }
 
-/* ----------------購物車------------------ */
 
 
-
-
-/* --------------------頁尾--------------------- */
-footer {
-  background-color: #5A6E42;
-  position: relative;
-  height: 256px;
-}
-
-footer>img {
-  width: 104px;
-  position: absolute;
-  left: 20px;
-  top: 20px;
-}
-
-ul {
-  display: flex;
-  gap: 10%;
-  justify-content: center;
-  align-items: center;
-  padding: 36px 0;
-}
-
-ol {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-li {
-  color: #fff;
-}
-
-ol li img,
-.soc img {
-  width: 24px;
-}
-
-.soc {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}

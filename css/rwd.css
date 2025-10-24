@@ -1,0 +1,295 @@
+/* 1200? */
+
+@media screen and (max-width: 820px) {
+  * {
+    /* box-sizing: border-box; */
+
+  }
+
+  .container {
+    /* max-width: 95%; */
+  }
+
+  /* --------------header----------- */
+
+
+  /* ------------hero頁------------- */
+  .hero {}
+
+  .hero .tx {
+    top: 22%;
+    left: 50%;
+    transform: translateX(-65%);
+    gap: 12%;
+    padding: 3%;
+    padding-bottom: 12%;
+    height: 65%;
+    width: 60%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  /* -----------------------首頁卡片--------------------------- */
+  .pros,
+  .prod,
+  .loca {
+    padding: 32px 0;
+  }
+
+  .pros {
+    margin: 16px auto;
+  }
+
+  .pros article {
+    flex-direction: column;
+    row-gap: 32px;
+    margin-bottom: 32px;
+  }
+
+  .pros h2 {
+    margin-bottom: 18px;
+  }
+
+  .fo.tx {
+    padding-right: 0;
+  }
+
+  .eye.tx,
+  .su.tx {
+    order: 1;
+    padding-left: 0;
+
+  }
+
+  /* --------------首頁產品列表------------------------ */
+  .prod h2 {
+    margin-left: 5vw;
+  }
+
+  .prod h2+a {
+    margin-right: 5vw;
+  }
+
+  .prod ul {
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: center;
+  }
+
+  /*-----------------------實體通路-----------------*/
+  .loca h2 {
+    margin-left: 5vw;
+  }
+
+  #area {
+    margin-right: 5vw;
+  }
+
+  .f {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5vh;
+    margin-top: 44px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .map iframe {
+    box-sizing: border-box;
+    /* margin: 0; */
+    width: 97vw;
+
+  }
+
+  /* ----------------------關於我們---------------------------- */
+  .about {
+    padding: 64px 0 0;
+  }
+
+  .wra {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .wra .tx {
+    width: 100%;
+  }
+
+  .wra img {
+    margin: 10%;
+    width: 80%;
+  }
+
+  /*------------footer*/
+  footer>img {
+    width: 16vw;
+    max-width: 104px;
+    position: absolute;
+    left: 3%;
+    top: auto;
+    bottom: 3%;
+  }
+
+  footer ul {
+    gap: 4%;
+    padding: 3%;
+    /* padding-bottom: 12%; */
+  }
+
+  footer .soc {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+  }
+
+  /*-----------------------產品列表----------------------*/
+  .prodAll ul {
+    max-width: 440px;
+
+  }
+
+  .prodAll>.container>h2 {
+    display: inline-block;
+    margin-left: 5vw;
+  }
+
+  .btn-tofilter {
+    margin-right: 5vw;
+  }
+
+  /*---------------------產品個別頁-------------------------------------*/
+  main .outer {
+    flex-wrap: wrap;
+  }
+
+  .outer .pics {
+    flex-direction: row;
+    /* gap: ?px; */
+    order: 2;
+  }
+
+  .pics button img {
+    transform: rotate(-90deg);
+  }
+
+  .pics button img:hover {
+    transform: rotate(-90deg) scale(1.2);
+  }
+
+  .pd_tx {
+    flex-direction: column;
+    order: 3;
+  }
+
+  main+.bg p {
+    padding: 0 3vw;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto;
+    grid-template-areas:
+      'h2'
+      'mon'
+      'sto'
+      'cpu'
+      'con'
+      'bat'
+      'wp';
+  }
+
+  .monitor,
+  .stora,
+  .cpu,
+  .connect,
+  .battery,
+  .waterproof {
+    padding: 3vw;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------ */
+@media screen and (max-width: 440px) {
+
+  /* 頁首 */
+  header {
+    position: relative;
+  }
+
+  .fa-solid.fa-bars {
+    display: block;
+  }
+
+  header .logo {
+    margin-left: 0px;
+  }
+
+  .hd {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 64px;
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .fa-solid:hover~.hd {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ------------hero頁------------- */
+
+  /* ----------------首頁卡片-------------------- */
+  .pros img {
+    width: 100%;
+    height: fit-content;
+  }
+
+  /* ----------------實體通路 */
+
+
+  /*------------footer*/
+  footer {
+    height: 220px;
+  }
+
+  footer>img {
+    width: 16vw;
+    position: absolute;
+    left: 3%;
+    top: 68%;
+  }
+
+  footer ul {
+    /* gap: ?%; */
+    justify-content: normal;
+    padding: 3%;
+  }
+
+  footer li {
+    font-size: 0.8rem;
+  }
+}
