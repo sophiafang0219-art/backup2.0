@@ -413,10 +413,9 @@ header .logo {
 
 .prodAll ul {
   display: flex;
-
-  gap: 4vw;
+  gap: 36px;
   flex-wrap: wrap;
-  max-width: calc(360*3+4vw);
+  max-width: calc(360px * 3 + 36px * 2);
   margin: 36px auto;  
 }
 
@@ -442,6 +441,7 @@ header .logo {
   align-items: center;
   justify-content: center;
   margin: 0;
+  max-width: 100%;
 }
 
 .prodAll ul.page .dir {
@@ -522,7 +522,11 @@ header .logo {
 }
 
 .bk {
-  display: none;
+  /* display: none; */
+  opacity: 0;
+  pointer-events: none;
+transition: all .2s;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -600,7 +604,8 @@ input[type="radio"] {
 
 
 .bk.active {
-  display: block;
+  /* display: block; */
+  opacity: 1;
 }
 
 /*-------------------個別商品頁------------*/
@@ -631,6 +636,7 @@ main .outer {
 .pics img {
   width: 116px;
   height: 116px;
+  cursor: pointer;
 }
 
 .pics button img {
