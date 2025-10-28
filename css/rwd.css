@@ -103,12 +103,9 @@
     justify-content: center;
     align-items: center;
   }
-
   .map iframe {
     box-sizing: border-box;
-    /* margin: 0; */
     width: 97vw;
-
   }
 
   /* ----------------------關於我們---------------------------- */
@@ -156,8 +153,8 @@
   }
 
   /*-----------------------產品列表----------------------*/
-  .prodAll ul {
-    max-width: calc(360px * 2 + 36px);
+  .prodAll>ul {
+    /* max-width: calc(360px * 2 + 36px); */
 
   }
 
@@ -170,7 +167,7 @@
     margin-right: 5vw;
   }
 
-  /* --------------------篩選 */
+  /* --------------------篩選------- */
   .popup{
     max-height: 100vh;
   }
@@ -295,8 +292,8 @@
 
   /*----------------------產品總表*/
   .prodAll ul {
-    width: 90%;
-    justify-content: center;
+    /* width: 90%;
+    justify-content: center; */
   }
 
   .prodAll ul.page {
