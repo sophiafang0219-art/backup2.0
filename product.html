@@ -58,12 +58,6 @@
           <p>磁吸式無源電磁筆</p>
           <a href="prod_single.html">了解更多</a>
         </li>
-          <li>
-          <img src="img/prod6.png" alt="">
-          <h2>Aether Precision Pen</h2>
-          <p>磁吸式無源電磁筆</p>
-          <a href="prod_single.html">了解更多</a>
-        </li>
       </ul>
       <ul class="page">
         <li class="dir"><img src="img/left.svg" alt=""></li>
@@ -203,6 +197,13 @@
   fetch('./header.html')
     .then(res => res.text())
     .then(data => document.querySelector('header').innerHTML = data)
+    .then(() => {
+      console.log('menu');
+      
+      $(".menu").on("click", function () {
+        $(this).toggleClass('active')
+      });
+    })
   fetch('./footer.html')
     .then(res => res.text())
     .then(data => document.querySelector('footer').innerHTML = data)
