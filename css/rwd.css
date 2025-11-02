@@ -37,17 +37,41 @@
   }
 }
 
+@media screen and (max-width: 1175px) {
+  .prod .container ul {
+    flex-wrap: wrap;
+    margin: 84px auto 0;
+    justify-content: flex-start;
+  }
+}
+
+/* Combining both: styles apply within a range */
+@media screen and (min-width: 760px) and (max-width: 1175px) {
+  .prod .container ul {
+    width: calc(360px * 2 + 36px);
+    /* width: calc(360px * 2 + 36px);
+    flex-wrap: wrap;
+    margin: 84px auto 0;
+    justify-content: flex-start; */
+  }
+
+  /* Styles for tablets only */
+}
+
+
+
 @media screen and (max-width: 1068px) {
 
   /* 首頁hero */
-  .hero h1 {
+  h1 {
     font-size: 3.75rem;
   }
 
   .hero .tx {
     gap: 12%;
-    padding: 2%;
+    padding: 3%;
   }
+
 }
 
 
@@ -106,7 +130,7 @@
     padding-left: 2.5%;
   }
 
-  .hero h1 {
+  h1 {
     font-size: 2.5rem;
   }
 
@@ -137,16 +161,17 @@
 
   .fo.tx {
     padding-right: 0;
+    flex-basis: auto;
   }
 
   .eye.tx,
   .su.tx {
     order: 1;
     padding-left: 0;
+    flex-basis: auto;
   }
 
   /* --------------首頁產品列表------------------------ */
-
 
   .prod ul {
     flex-direction: column;
@@ -230,13 +255,14 @@
     display: block;
     position: fixed;
     top: 54%;
-}
+  }
 
   .content {
     padding: 2% 0 0;
     gap: 3%;
     max-height: fit-content;
   }
+
   .popup-btns {
     padding: 2%;
   }
@@ -269,6 +295,7 @@
   .pd_tx {
     flex-direction: column;
     order: 3;
+
   }
 
   main+.bg p {
@@ -286,6 +313,7 @@
       'con'
       'bat'
       'wp';
+    margin: 5% auto 10%;
   }
 
   .monitor,
@@ -312,7 +340,7 @@
   }
 
   .transition {
-    transition: 1s;
+    transition: .8s;
   }
 
   .bar-outer {
@@ -327,20 +355,22 @@
 
   .menu ul.hd {
     display: none;
+    opacity: 0;
     height: auto;
     margin-right: 0;
-    border-radius: 8px;
+    border-radius: 12px;
     text-align: center;
 
     position: absolute;
     right: 0;
     top: 48px;
     background-color: #e8e5dc;
-    width: 140px;
+    width: 40vw;
   }
 
   .menu.active ul {
     display: block;
+    opacity: 1;
   }
 
   .menu ul.hd li {
@@ -361,15 +391,15 @@
   }
 
   .bar {
-    width: 36px;
-    height: 6px;
+    width: 30px;
+    height: 5px;
     background-color: #404040;
-    margin: 6px 0;
+    margin: 5px 0;
     border-radius: 3px;
   }
 
   .menu.active .bar1 {
-    transform: rotate(-45deg) translate(-9px, 7px);
+    transform: rotate(-45deg) translate(-7px, 6px);
   }
 
   .menu.active .bar2 {
@@ -377,11 +407,11 @@
   }
 
   .menu.active .bar3 {
-    transform: rotate(45deg) translate(-9px, -8px);
+    transform: rotate(45deg) translate(-8px, -7px);
   }
 
   /* -------------hero */
-  .hero h1 {
+  h1 {
     font-size: 2rem;
   }
 
@@ -427,31 +457,48 @@
 /* ------------------------------------ */
 @media screen and (max-width: 440px) {
 
+  /* p, a, span{
+    /* font-size: 0.8rem; */
+  /* } */
+  h2 {
+    font-size: 1.3rem;
+  }
+
   /* 頁首 */
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero .tx {
+    gap: 5%;
+    height: 73%;
+    top: 16%;
+    left: 47%;
+  }
+
+
   header {
     position: relative;
   }
 
-  .fa-solid.fa-bars {
-    display: block;
+  .menu ul.hd {
+    top: 43px;
   }
 
 
-  /* .hd {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 60px;
-    width: 100%;
-    margin-right: 0px;
-  }
-
-  .fa-solid:hover~.hd {
-    display: flex;
-    flex-direction: column;
-  } */
 
   /* ------------hero頁------------- */
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero .bgc {
+    width: 30%;
+  }
+
+  .hero img {
+    width: 70%;
+  }
 
   /* ----------------首頁卡片-------------------- */
   .pros img {
@@ -459,8 +506,27 @@
     height: fit-content;
   }
 
-  /* ----------------實體通路 */
+  /* 首頁產品 */
+  .prod .container ul {
+    width: auto;
+    justify-content: center;
+  }
 
+  .prod img {
+    border-radius: 16px;
+    width: 100%;
+  }
+
+  .prod p {
+    padding: 0 8%;
+  }
+
+  /* ----------------實體通路 */
+  .thr,
+  .wes,
+  .dre {
+    width: 97vw;
+  }
 
   /*----------------------產品總表*/
   .prodAll {
@@ -516,20 +582,52 @@
   }
 
   footer ul {
-    padding: 2.5%;
-  }
-
-  footer li {}
-}
-
-@media screen and (max-width: 415px) {
-  footer ul {
-    padding: 2.5%;
+    gap: 1%;
+    padding: .5%;
+    padding-top: 2.5%;
   }
 
   footer li {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
+
+  /* ---------------------產品個別 */
+  .prodone {
+    overflow: hidden;
+    padding-top: 5%;
+  }
+
+  .pd_tx {
+    padding: 3%;
+  }
+img.big {
+  width: 100%;
+  height: auto;
+}
+
+.pics img {
+  /* 圖片 */
+  width: 20%;
+  height: 20%;
+}
+
+.pics button img {
+  /* 按鈕 */
+  width: 100%;
+  height: 100%;
+}
+
+.pics button {
+  padding: 0;
+}
+
+.outer .pics {
+  gap: 1%;
+}
+}
+
+@media screen and (max-width: 415px) {
+
 
   footer li img {
     width: 9%;

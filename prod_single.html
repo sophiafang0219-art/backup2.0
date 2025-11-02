@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body style="overflow-y: auto;">
   <!---------------頁首------------------->
   <header></header>
   <!-- --------------個別產品頁-----------  -->
@@ -22,13 +22,13 @@
     <div class="outer">
       <div class="pics">
         <button><img src="img/up.svg" alt="" class="up"></button>
-        <img src="img/pd1-1.png" alt="">
-        <img src="img/pd1-2.png" alt="">
-        <img src="img/pd1-3.png" alt="">
-        <img src="img/prod1.png" alt="">
+        <img src="img/pd1-1.jpg" alt="">
+        <img src="img/pd1-2.jpg" alt="">
+        <img src="img/pd1-3.jpg" alt="">
+        <img src="img/pd1-4.jpg" alt="">
         <button><img src="img/down.svg" alt="" class="down"></button>
       </div>
-      <img src="img/prod1BIG.png" alt="" class="big">
+      <img src="img/pd1-4.jpg" alt="" class="big">
       <div class="pd_tx">
         <h2>Aether Nova 6S</h2>
         <p>極致輕量化設計，專注於單色文本閱讀的極致舒適度，適合通勤族。
@@ -83,10 +83,15 @@
     // 引入頁首& 頁尾
     fetch('./header.html')
       .then(res => res.text())
-      .then(data => document.querySelector('header').innerHTML=data)
+      .then(data => document.querySelector('header').innerHTML = data)
+      .then(() => {
+        $(".menu").on("click", function () {
+          $(this).toggleClass('active')
+        });
+      })
     fetch('./footer.html')
       .then(res => res.text())
-      .then(data => document.querySelector('footer').innerHTML=data)
+      .then(data => document.querySelector('footer').innerHTML = data)
   </script>
 </body>
 
