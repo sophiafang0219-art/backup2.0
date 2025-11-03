@@ -3,6 +3,10 @@
     max-width: auto;
   }
 
+  /*  */
+.hero .tx{
+      gap: 16%
+}
   /* 首頁列表 */
   .prod h2 {
     margin-left: 5vw;
@@ -76,6 +80,11 @@
 
 
 @media screen and (max-width: 883px) {
+
+  /*  */
+  .hero p {
+    font-size: 1.2rem;
+  }
 
   /*------------footer*/
   footer>img {
